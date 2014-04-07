@@ -1,5 +1,11 @@
 === (ongoing) ===
+
+=== 0.1  ===
 - Initial commit
+- The code was initially written by Tobias Lorenz as part of django-libs
+  For the original code, please see https://github.com/bitmazk/django-libs/commit/35e66b14af73479c4c39c67fcea66c549ac79eb4
+- This initial commit contains a few changes to untanlge the code from Django's
+  settings module and one additional test has been added.
 
 
 # Suggested file syntax:
