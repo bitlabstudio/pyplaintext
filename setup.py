@@ -37,7 +37,8 @@ dev_requires = [
 ]
 
 install_requires = [
-    'django',
+    'HTMLParser',
+    'beautifulsoup4>4.0.0',
 ]
 
 

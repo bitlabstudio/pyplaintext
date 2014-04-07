@@ -18,45 +18,16 @@ To get the latest commit from GitHub
 
     pip install -e git+git://github.com/bitmazk/pyplaintext.git#egg=pyplaintext
 
-TODO: Describe further installation steps (edit / remove the examples below):
-
-Add ``pyplaintext`` to your ``INSTALLED_APPS``
-
-.. code-block:: python
-
-    INSTALLED_APPS = (
-        ...,
-        'pyplaintext',
-    )
-
-Add the ``pyplaintext`` URLs to your ``urls.py``
-
-.. code-block:: python
-
-    urlpatterns = patterns('',
-        ...
-        url(r'^//', include('pyplaintext.urls')),
-    )
-
-Before your tags/filters are available in your templates, load them by using
-
-.. code-block:: html
-
-	{% load pyplaintext_tags %}
-
-
-Don't forget to migrate your database
-
-.. code-block:: bash
-
-    ./manage.py migrate pyplaintext
-
 
 Usage
 -----
 
-TODO: Describe usage or point to docs. Also describe available settings and
-templatetags.
+.. code-block:: python
+
+    from pyplaintext import converter
+    html = '<html><body>Hello world!</body></html>'
+    parser = converter.HTML2PlainParser()
+    result = parser.html_to_plain_text(html)
 
 
 Contribute
@@ -70,6 +41,8 @@ If you want to contribute to this project, please perform the following steps
     # Clone your fork
     mkvirtualenv -p python2.7 pyplaintext
     make develop
+    make test
+    open htmlcov/index.html
 
     git co -b feature_branch master
     # Implement your feature and tests

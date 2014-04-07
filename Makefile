@@ -11,3 +11,7 @@ lint-python:
 	@echo "Linting Python files"
 	PYFLAKES_NODOCTEST=1 flake8 pyplaintext
 	@echo ""
+
+test:
+	coverage run -m unittest discover -p '*_tests.py'
+	coverage html
