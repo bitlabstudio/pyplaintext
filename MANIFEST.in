@@ -1,0 +1,9 @@
+include AUTHORS
+include LICENSE
+include DESCRIPTION
+include CHANGELOG.txt
+include README.md
+graft pyplaintext
+global-exclude *.orig *.pyc *.log *.swp
+prune pyplaintext/tests/coverage
+prune pyplaintext/.ropeproject
