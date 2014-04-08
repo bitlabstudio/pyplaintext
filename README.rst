@@ -3,6 +3,8 @@ PyPlaintext
 
 A HTML to plaintext converter.
 
+You can find a hosted demo at `https://bitmazkdemo.webfactional.com/en/pyplaintext/ <https://bitmazkdemo.webfactional.com/en/pyplaintext/>`_
+
 Installation
 ------------
 
