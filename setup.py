@@ -42,7 +42,7 @@ install_requires = [
     'beautifulsoup4>4.0.0',
 ]
 
-if version_info[:2] < (2,7)
+if version_info[:2] < (2,7):
     install_requires.append('HTMLParser')
 
 def read(fname):
