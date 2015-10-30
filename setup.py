@@ -29,6 +29,8 @@ http://docs.python.org/2/distutils/sourcedist.html
 """
 import os
 from setuptools import setup, find_packages
+from sys import version_info
+
 import pyplaintext as app
 
 
@@ -37,10 +39,11 @@ dev_requires = [
 ]
 
 install_requires = [
-    'HTMLParser',
     'beautifulsoup4>4.0.0',
 ]
 
+if version_info[:2] < (2,7)
+    install_requires.append('HTMLParser')
 
 def read(fname):
     try:
